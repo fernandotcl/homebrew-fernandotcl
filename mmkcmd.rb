@@ -9,5 +9,6 @@ class Mmkcmd < Formula
   def install
     system "cmake", ".", *std_cmake_args
     system "make install"
+    man1.install "man/mmkcmd.1"
   end
 end
