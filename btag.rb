@@ -4,7 +4,7 @@ class Btag < Formula
   homepage 'https://github.com/fernandotcl/btag'
   head 'https://github.com/fernandotcl/btag.git'
   url 'https://github.com/fernandotcl/btag/archive/release-1.4.0.tar.gz'
-  sha1 'f14e8407cbff43a36c84c9f337b57e6e0335bfb1'
+  sha1 'b741445bd885f1ba3ed29e522ee5403e2bc871cc'
 
   depends_on 'cmake' => :build
   depends_on 'pkg-config' => :build
