@@ -3,8 +3,8 @@ require 'formula'
 class Btag < Formula
   homepage 'https://github.com/fernandotcl/btag'
   head 'https://github.com/fernandotcl/btag.git'
-  url 'https://github.com/fernandotcl/btag/archive/release-1.3.0.tar.gz'
-  sha1 'c8b487dc4fc52ae6d7abfe79eadc5b96ecee4879'
+  url 'https://github.com/fernandotcl/btag/archive/release-1.4.0.tar.gz'
+  sha1 'f14e8407cbff43a36c84c9f337b57e6e0335bfb1'
 
   depends_on 'cmake' => :build
   depends_on 'pkg-config' => :build
