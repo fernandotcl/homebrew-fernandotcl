@@ -1,8 +1,8 @@
 class MonkeysAudio < Formula
   desc "Port of Monkey's Audio Codec to Unix-like systems"
   homepage "https://github.com/fernandotcl/monkeys-audio"
-  url "https://github.com/fernandotcl/monkeys-audio/archive/release-3.99.5.tar.gz"
-  sha256 "0b87ae68f543374522b95449e133cbbadfc5e4ca9e22c75f0265ef7c52ec593f"
+  url "https://github.com/fernandotcl/monkeys-audio/archive/release-3.99.6.tar.gz"
+  sha256 "0d279bf2042ac5a8fc57674de0f20a4c78f8f33926346d98949bc312c76860f1"
   head "https://github.com/fernandotcl/monkeys-audio.git"
 
   depends_on "cmake" => :build
