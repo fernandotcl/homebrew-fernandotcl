@@ -1,0 +1,15 @@
+parameters:
+  name: ''
+  formula: ''
+  head: false
+
+jobs:
+- job: ${{ parameters.name }}
+  pool:
+    vmImage: macOS-10.13
+  steps:
+  - script: sudo xcode-select --switch /Applications/Xcode_10.1.app/Contents/Developer
+  - ${{ if eq(parameters.head, true) }}:
+    - script: brew install --verbose --HEAD ./${{ parameters.formula }}.rb
+  - ${{ if eq(parameters.head, false) }}:
+    - script: brew install --verbose ./${{ parameters.formula }}.rb
