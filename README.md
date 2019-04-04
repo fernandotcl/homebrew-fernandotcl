@@ -1,4 +1,6 @@
-## Introduction
+# homebrew-fernandotcl
+
+[![Build Status](https://dev.azure.com/fernandotcl/homebrew-fernandotcl/_apis/build/status/fernandotcl.homebrew-fernandotcl?branchName=master)](https://dev.azure.com/fernandotcl/homebrew-fernandotcl/_build/latest?definitionId=1&branchName=master)
 
 Those are my [Homebrew][] formulae. Those formulae aren't part of mainline Homebrew or have been modified for my personal use. You may use them through [Homebrew taps][taps] or pick only the ones that you need.
 
@@ -17,4 +19,6 @@ Then install the formulae you want. See `brew(1)` for more information.
 
 ## Credits
 
-All formulae currently in this repository were created by [Fernando Tarlá Cardoso Lemos](mailto:fernandotcl@gmail.com).
+These formulae were created by [Fernando Tarlá Cardoso Lemos][fernando].
+
+[fernando]: mailto:fernandotcl@gmail.com
