@@ -9,6 +9,7 @@ class Btag < Formula
   depends_on "pkg-config" => :build
   depends_on "boost"
   depends_on "libcue"
+  depends_on "libedit"
   depends_on "taglib"
 
   def install
