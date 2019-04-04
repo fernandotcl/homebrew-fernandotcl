@@ -1,8 +1,8 @@
 class Btag < Formula
   desc "Command-line based audio file tagger"
   homepage "https://github.com/fernandotcl/btag"
-  url "https://github.com/fernandotcl/btag/archive/release-1.4.0.tar.gz"
-  sha256 "e127b3841fdddb50b6d644e0dc6b7d99bb5f90aabe6a90adf254b6cd2eaefb1a"
+  url "https://github.com/fernandotcl/btag/archive/release-1.4.1.tar.gz"
+  sha256 "a4a7b907f01ac6c65689fc7b12b0fa2a77645c488bcafab2049bb4965cd15e80"
   head "https://github.com/fernandotcl/btag.git"
 
   depends_on "cmake" => :build
