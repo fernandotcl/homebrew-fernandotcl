@@ -1,26 +1,26 @@
 jobs:
-- template: azure-pipelines-job.yml
-  parameters:
-    name: btag
-    formula: btag
+  - template: azure-pipelines-job.yml
+    parameters:
+      name: btag
+      formula: btag
 
-- template: azure-pipelines-job.yml
-  parameters:
-    name: mmkcmd
-    formula: mmkcmd
+  - template: azure-pipelines-job.yml
+    parameters:
+      name: mmkcmd
+      formula: mmkcmd
 
-- template: azure-pipelines-job.yml
-  parameters:
-    name: monkeys_audio
-    formula: monkeys-audio
+  - template: azure-pipelines-job.yml
+    parameters:
+      name: monkeys_audio
+      formula: monkeys-audio
 
-- template: azure-pipelines-job.yml
-  parameters:
-    name: synconv
-    formula: synconv
+  - template: azure-pipelines-job.yml
+    parameters:
+      name: synconv
+      formula: synconv
 
-- template: azure-pipelines-job.yml
-  parameters:
-    name: tinyemu
-    formula: tinyemu
-    head: true
+  - template: azure-pipelines-job.yml
+    parameters:
+      name: tinyemu
+      formula: tinyemu
+      head: true
