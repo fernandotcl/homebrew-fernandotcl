@@ -5,10 +5,18 @@ parameters:
 
 jobs:
 - job: ${{ parameters.name }}
+  strategy:
+    matrix:
+      HighSierra:
+        VM_IMAGE: macOS-10.13
+        XCODE_VERSION: '10.1'
+      Mojave:
+        VM_IMAGE: macOS-10.14
+        XCODE_VERSION: '10.2'
   pool:
-    vmImage: macOS-10.13
+    vmImage: $(VM_IMAGE)
   steps:
-  - script: sudo xcode-select --switch /Applications/Xcode_10.1.app/Contents/Developer
+  - script: sudo xcode-select --switch /Applications/Xcode_$(XCODE_VERSION).app/Contents/Developer
   - ${{ if eq(parameters.head, true) }}:
     - script: brew install --verbose --HEAD ./${{ parameters.formula }}.rb
   - ${{ if eq(parameters.head, false) }}:
