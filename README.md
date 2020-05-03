@@ -1,6 +1,6 @@
 # homebrew-fernandotcl
 
-[![Build Status](https://dev.azure.com/fernandotcl/homebrew-fernandotcl/_apis/build/status/fernandotcl.homebrew-fernandotcl?branchName=master)](https://dev.azure.com/fernandotcl/homebrew-fernandotcl/_build/latest?definitionId=1&branchName=master)
+![Build](https://github.com/fernandotcl/homebrew-fernandotcl/workflows/Build/badge.svg)
 
 Those are my [Homebrew][] formulae. Those formulae aren't part of mainline Homebrew or have been modified for my personal use. You may use them through [Homebrew taps][taps] or pick only the ones that you need.
 
