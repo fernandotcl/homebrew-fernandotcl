@@ -1,0 +1,25 @@
+name: Build
+
+on: push
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        formula: [btag, mmkcmd, monkeys-audio, synconv]
+        os: [macos-10.15]
+        xcode: ['11.4.1']
+        head: [false]
+        include:
+          - formula: tinyemu
+            os: macos-10.15
+            xcode: '11.4.1'
+            head: true
+    steps:
+      - uses: actions/checkout@v2
+      - run: sudo xcode-select --switch /Applications/Xcode_${{ matrix.xcode }}.app/Contents/Developer
+      - run: brew install --verbose ./${{ matrix.formula }}.rb
+        if: ${{ !matrix.head }}
+      - run: brew install --verbose --HEAD ./${{ matrix.formula }}.rb
+        if: ${{ matrix.head }}
