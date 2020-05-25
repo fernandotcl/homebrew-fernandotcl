@@ -1,10 +1,11 @@
 # homebrew-fernandotcl
 
-![Build](https://github.com/fernandotcl/homebrew-fernandotcl/workflows/Build/badge.svg)
+[![Build](https://github.com/fernandotcl/homebrew-fernandotcl/workflows/Build/badge.svg)][GitHub Actions]
 
 Those are my [Homebrew][] formulae. Those formulae aren't part of mainline Homebrew or have been modified for my personal use. You may use them through [Homebrew taps][taps] or pick only the ones that you need.
 
-[homebrew]: http://mxcl.github.com/homebrew/
+[GitHub Actions]: https://github.com/fernandotcl/homebrew-fernandotcl/actions?query=workflow%3ABuild
+[Homebrew]: http://mxcl.github.com/homebrew/
 [taps]: https://github.com/mxcl/homebrew/wiki/Homebrew-0.9
 
 ## Usage
