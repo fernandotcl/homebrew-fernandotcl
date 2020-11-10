@@ -9,12 +9,16 @@ jobs:
       matrix:
         formula: [btag, mmkcmd, monkeys-audio, synconv]
         os: [macos-10.15]
-        xcode: ['11.4.1']
+        xcode: ['12.1']
         head: [false]
         include:
+          - formula: ddcctl
+            os: macos-10.15
+            xcode: '12.1'
+            head: true
           - formula: tinyemu
             os: macos-10.15
-            xcode: '11.4.1'
+            xcode: '12.1'
             head: true
     steps:
       - uses: actions/checkout@v2
