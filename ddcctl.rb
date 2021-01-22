@@ -4,17 +4,7 @@ class Ddcctl < Formula
   head "https://github.com/kfix/ddcctl.git"
 
   def install
-    system "make", "clean"
-    system "make", "nvidia"
-    mv "ddcctl", "ddcctl-nvidia"
-    bin.install "ddcctl-nvidia"
-    system "make", "clean"
-    system "make", "intel"
-    mv "ddcctl", "ddcctl-intel"
-    bin.install "ddcctl-intel"
-    system "make", "clean"
-    system "make", "amd"
-    mv "ddcctl", "ddcctl-amd"
-    bin.install "ddcctl-amd"
+    system "make"
+    bin.install "./bin/release/ddcctl"
   end
 end
